@@ -40,6 +40,7 @@ const DEFAULT_ORIGINS = [
   "https://ragascareerworld.com",
   "https://www.ragascareerworld.com",
   "https://rosybrown-snake-826018.hostingersite.com",
+  "https://agent-6ab3c798c627b--magnificent-rugelach-0b7958.netlify.app",
 ];
 
 const envOrigins = (process.env.CORS_ORIGINS || "")
