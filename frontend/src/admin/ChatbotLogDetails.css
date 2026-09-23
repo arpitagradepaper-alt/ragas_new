@@ -1,0 +1,289 @@
+.chat-log-details-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fa;
+}
+
+.chat-log-loading,
+.chat-log-error {
+  padding: 40px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 14px;
+  color: #555;
+}
+
+.chat-log-error {
+  color: #b42318;
+}
+
+.chat-log-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #244b45;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.chat-log-title-area {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.chat-log-details-header {
+  margin-bottom: 30px;
+}
+
+.chat-log-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: #e7f0ee;
+  color: #244b45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-log-eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #777;
+}
+
+.chat-log-title-area h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #172b27;
+}
+
+.chat-log-subtitle {
+  margin-top: 7px;
+  color: #666;
+  font-size: 14px;
+}
+
+.chat-log-details-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+.chat-log-main-card,
+.chat-log-info-card {
+  background: #ffffff;
+  border: 1px solid #e7e9eb;
+  border-radius: 16px;
+}
+
+.chat-log-main-card {
+  padding: 28px;
+}
+
+.chat-log-info-card {
+  padding: 22px;
+}
+
+.chat-log-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat-log-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eceeef;
+  color: #172b27;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.chat-log-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.chat-log-message-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.chat-log-user-row {
+  flex-direction: row-reverse;
+}
+
+.chat-log-message-avatar {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar {
+  background: #e9f0ff;
+  color: #315ca8;
+}
+
+.ai-avatar {
+  background: #e7f0ee;
+  color: #244b45;
+}
+
+.chat-log-message-content {
+  max-width: 75%;
+}
+
+.chat-log-user-row .chat-log-message-content {
+  text-align: right;
+}
+
+.chat-log-message-top {
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #777;
+}
+
+.chat-log-message-bubble {
+  padding: 13px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #394744;
+  white-space: pre-line;
+}
+
+.ai-bubble {
+  background: #f1f5f4;
+  border-top-left-radius: 4px;
+}
+
+.user-bubble {
+  background: #edf2ff;
+  border-top-right-radius: 4px;
+}
+
+.chat-log-no-messages {
+  padding: 35px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.chat-log-info-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eceeef;
+  color: #172b27;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chat-log-status-box {
+  display: flex;
+  align-items: center;
+}
+
+.chat-log-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.chat-log-status.resolved {
+  background: #e9f8ef;
+  color: #16704a;
+}
+
+.chat-log-status.live {
+  background: #fff4df;
+  color: #9a6700;
+}
+
+.chat-log-info-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-log-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 13px 0;
+  border-bottom: 1px solid #f0f1f2;
+}
+
+.chat-log-info-item:first-child {
+  padding-top: 0;
+}
+
+.chat-log-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.chat-log-info-item span {
+  font-size: 12px;
+  color: #888;
+}
+
+.chat-log-info-item strong {
+  font-size: 14px;
+  color: #263b37;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .chat-log-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-log-sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .chat-log-details-page {
+    padding: 20px;
+  }
+
+  .chat-log-title-area h1 {
+    font-size: 24px;
+  }
+
+  .chat-log-main-card,
+  .chat-log-info-card {
+    padding: 20px;
+  }
+
+  .chat-log-message-content {
+    max-width: 82%;
+  }
+}

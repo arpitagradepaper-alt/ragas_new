@@ -1,0 +1,951 @@
+/* =========================================================
+   JOB SEEKERS PAGE
+========================================================= */
+
+.job-seekers-page {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  color: #10243f;
+}
+
+.job-seekers-main {
+  width: 100%;
+  min-height: calc(100vh - 78px);
+  padding: 42px 55px 55px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.job-seekers-hero {
+  width: 100%;
+}
+
+.job-seekers-eyebrow {
+  margin: 0 0 12px;
+
+  color: #a77a2c;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.job-seekers-hero h1 {
+  margin: 0;
+
+  color: #10243f;
+
+  font-size: clamp(36px, 3.2vw, 54px);
+  line-height: 1.1;
+
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.job-seekers-description {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 16px 0 22px;
+
+  color: #4f565b;
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.job-seekers-actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.job-seekers-btn {
+  min-height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 23px;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.job-seekers-btn.primary {
+  background: #c9a254;
+  color: #10243f;
+
+  border: 1px solid #c9a254;
+}
+
+.job-seekers-btn.primary:hover {
+  background: #b99143;
+  border-color: #b99143;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 14px rgba(167, 122, 44, 0.15);
+}
+
+.job-seekers-btn.secondary {
+  background: #ffffff;
+  color: #10243f;
+
+  border: 1px solid #263b4d;
+}
+
+.job-seekers-btn.secondary:hover {
+  background: #f7f7f5;
+
+  border-color: #10243f;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.job-seekers-features {
+  width: 100%;
+
+  margin-top: 34px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.job-seekers-feature {
+  min-height: 68px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e3e1;
+  border-radius: 7px;
+
+  box-shadow: 0 2px 8px rgba(16, 36, 63, 0.035);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.job-seekers-feature:hover {
+  border-color: #c9a254;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 6px 16px rgba(16, 36, 63, 0.06);
+}
+
+.job-seekers-feature span {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  margin-right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f5efe2;
+  color: #a77a2c;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.job-seekers-feature p {
+  margin: 0;
+
+  color: #30383d;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   CAREER RESOURCES
+========================================================= */
+
+.career-resources {
+  width: 100%;
+
+  margin-top: 52px;
+}
+
+.resources-eyebrow {
+  margin: 0 0 15px;
+
+  color: #a77a2c;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.resources-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.resource-card {
+  min-height: 150px;
+
+  padding: 22px;
+
+  position: relative;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e4e1;
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(16, 36, 63, 0.025);
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.resource-card:hover {
+  border-color: #c9a254;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(16, 36, 63, 0.07);
+}
+
+.resource-number {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #c9a254;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.resource-card h3 {
+  margin: 0 0 8px;
+
+  color: #263847;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.resource-card p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #70777c;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   COMMON SECTION HEADING
+========================================================= */
+
+.job-seekers-section-heading {
+  width: 100%;
+  max-width: 900px;
+
+  margin-bottom: 28px;
+}
+
+.job-seekers-section-heading .job-seekers-eyebrow {
+  margin-bottom: 11px;
+}
+
+.job-seekers-section-heading h2 {
+  margin: 0;
+
+  color: #10243f;
+
+  font-size: clamp(28px, 2.7vw, 40px);
+  line-height: 1.18;
+
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.job-seekers-section-heading > p:last-child {
+  max-width: 800px;
+
+  margin: 13px 0 0;
+
+  color: #626a70;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.job-seekers-process {
+  width: 100%;
+
+  margin-top: 62px;
+}
+
+.job-seekers-process-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.process-card {
+  min-height: 185px;
+
+  padding: 22px;
+
+  background: #f8f8f6;
+
+  border: 1px solid #e5e5e1;
+  border-radius: 8px;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.process-card:hover {
+  background: #ffffff;
+
+  border-color: #c9a254;
+
+  transform: translateY(-4px);
+}
+
+.process-card > span {
+  display: block;
+
+  margin-bottom: 21px;
+
+  color: #c9a254;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.process-card h3 {
+  margin: 0 0 10px;
+
+  color: #263847;
+
+  font-size: 16px;
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+.process-card p {
+  margin: 0;
+
+  color: #6a7277;
+
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   CAREER OPPORTUNITIES
+========================================================= */
+
+.job-seekers-opportunities {
+  width: 100%;
+
+  margin-top: 62px;
+}
+
+.opportunities-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.opportunity-card {
+  min-height: 220px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e3e1;
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(16, 36, 63, 0.025);
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.opportunity-card:hover {
+  border-color: #c9a254;
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 20px rgba(16, 36, 63, 0.065);
+}
+
+.opportunity-number {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #c9a254;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.opportunity-card h3 {
+  margin: 0 0 10px;
+
+  color: #263847;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.opportunity-card p {
+  margin: 0 0 20px;
+
+  color: #6b7378;
+
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.opportunity-link {
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #10243f;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.opportunity-link:hover {
+  color: #a77a2c;
+}
+
+
+/* =========================================================
+   CANDIDATE SUPPORT
+========================================================= */
+
+.job-seekers-support {
+  width: 100%;
+
+  margin-top: 62px;
+}
+
+.support-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.support-card {
+  min-height: 170px;
+
+  padding: 21px;
+
+  background: #f8f8f6;
+
+  border: 1px solid #e4e5e2;
+  border-radius: 8px;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.support-card:hover {
+  background: #ffffff;
+
+  border-color: #c9a254;
+
+  transform: translateY(-3px);
+}
+
+.support-card h3 {
+  margin: 0 0 11px;
+
+  color: #263847;
+
+  font-size: 15px;
+  line-height: 1.35;
+
+  font-weight: 800;
+}
+
+.support-card p {
+  margin: 0;
+
+  color: #6b7378;
+
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.job-seekers-cta {
+  width: 100%;
+
+  margin-top: 65px;
+
+  padding: 45px 42px;
+
+  background: #0b2340;
+
+  border-radius: 9px;
+
+  color: #ffffff;
+}
+
+.job-seekers-cta > div {
+  max-width: 1000px;
+}
+
+.job-seekers-cta .job-seekers-eyebrow {
+  color: #c9a254;
+}
+
+.job-seekers-cta h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(28px, 2.8vw, 41px);
+  line-height: 1.18;
+
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.job-seekers-cta > div > p:not(.job-seekers-eyebrow) {
+  max-width: 800px;
+
+  margin: 15px 0 23px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.job-seekers-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.job-seekers-cta .job-seekers-btn.secondary {
+  background: transparent;
+  color: #ffffff;
+
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.job-seekers-cta .job-seekers-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-color: #ffffff;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .job-seekers-main {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .job-seekers-hero h1 {
+    font-size: 56px;
+  }
+
+  .job-seekers-description {
+    font-size: 16px;
+  }
+
+  .job-seekers-feature {
+    min-height: 72px;
+  }
+
+  .resource-card,
+  .process-card,
+  .opportunity-card,
+  .support-card {
+    padding: 24px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .job-seekers-main {
+    padding: 40px 30px 50px;
+  }
+
+  .job-seekers-process-grid,
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job-seekers-process,
+  .job-seekers-opportunities,
+  .job-seekers-support {
+    margin-top: 58px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .job-seekers-main {
+    padding: 35px 22px 45px;
+  }
+
+  .job-seekers-features,
+  .resources-grid,
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-seekers-process-grid,
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resource-card {
+    min-height: 130px;
+  }
+
+  .process-card,
+  .support-card {
+    min-height: 160px;
+  }
+
+  .job-seekers-cta {
+    padding: 38px 28px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .job-seekers-main {
+    min-height: calc(100vh - 72px);
+
+    padding: 28px 18px 38px;
+  }
+
+  .job-seekers-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.25px;
+  }
+
+  .job-seekers-hero h1 {
+    font-size: 31px;
+    letter-spacing: -0.7px;
+  }
+
+  .job-seekers-description {
+    margin-top: 14px;
+
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .job-seekers-actions {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 9px;
+  }
+
+  .job-seekers-btn {
+    width: 100%;
+  }
+
+  .job-seekers-features {
+    margin-top: 27px;
+  }
+
+  .job-seekers-feature {
+    min-height: 60px;
+  }
+
+  .job-seekers-feature p {
+    font-size: 12px;
+  }
+
+  .career-resources,
+  .job-seekers-process,
+  .job-seekers-opportunities,
+  .job-seekers-support {
+    margin-top: 52px;
+  }
+
+  .resources-eyebrow {
+    font-size: 10px;
+  }
+
+  .resource-card {
+    padding: 19px;
+
+    min-height: 125px;
+  }
+
+  .resource-card h3 {
+    font-size: 15px;
+  }
+
+  .resource-card p {
+    font-size: 11px;
+  }
+
+  .job-seekers-section-heading {
+    margin-bottom: 24px;
+  }
+
+  .job-seekers-section-heading h2 {
+    font-size: 27px;
+  }
+
+  .job-seekers-section-heading > p:last-child {
+    font-size: 12px;
+  }
+
+  .job-seekers-process-grid,
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-card,
+  .support-card {
+    min-height: auto;
+
+    padding: 20px;
+  }
+
+  .process-card > span {
+    margin-bottom: 17px;
+  }
+
+  .process-card h3,
+  .support-card h3 {
+    font-size: 15px;
+  }
+
+  .process-card p,
+  .support-card p {
+    font-size: 11px;
+  }
+
+  .opportunity-card {
+    min-height: auto;
+
+    padding: 20px;
+  }
+
+  .opportunity-card h3 {
+    font-size: 17px;
+  }
+
+  .opportunity-card p {
+    font-size: 11px;
+  }
+
+  .job-seekers-cta {
+    margin-top: 55px;
+
+    padding: 32px 22px;
+
+    border-radius: 8px;
+  }
+
+  .job-seekers-cta h2 {
+    font-size: 27px;
+  }
+
+  .job-seekers-cta > div > p:not(.job-seekers-eyebrow) {
+    font-size: 12px;
+  }
+
+  .job-seekers-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 9px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .job-seekers-main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .job-seekers-hero h1 {
+    font-size: 28px;
+  }
+
+  .job-seekers-description {
+    font-size: 12px;
+  }
+
+  .job-seekers-section-heading h2 {
+    font-size: 25px;
+  }
+
+  .job-seekers-cta h2 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.job-seekers-btn:focus-visible,
+.opportunity-link:focus-visible {
+  outline: 2px solid #c9a254;
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .job-seekers-page *,
+  .job-seekers-page *::before,
+  .job-seekers-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+
+}

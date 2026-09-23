@@ -1,0 +1,318 @@
+.partner-page {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  color: #10243f;
+}
+
+.partner-main {
+  width: 100%;
+  min-height: calc(100vh - 78px - 58px);
+
+  padding: 25px 28px 35px;
+
+  display: grid;
+  grid-template-columns: 215px 1fr;
+  gap: 22px;
+}
+
+.partner-info {
+  padding-top: 5px;
+}
+
+.partner-eyebrow {
+  margin: 0 0 11px;
+
+  color: #a77a2c;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.partner-info h1 {
+  margin: 0;
+
+  color: #10243f;
+
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.partner-description {
+  margin: 16px 0 0;
+
+  color: #596168;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+.partner-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-top: 19px;
+}
+
+.partner-step {
+  padding: 11px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e2;
+  border-radius: 6px;
+}
+
+.partner-step strong {
+  color: #263847;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.partner-step span {
+  color: #70777c;
+
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.partner-login-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 39px;
+
+  margin-top: 20px;
+  padding: 0 22px;
+
+  border: 1px solid #0b2340;
+  border-radius: 5px;
+
+  background: #0b2340;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.partner-login-link:hover {
+  background: #173d63;
+  transform: translateY(-1px);
+}
+
+.partner-card {
+  width: 100%;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e4e1;
+  border-radius: 7px;
+
+  box-shadow: 0 2px 7px rgba(16, 36, 63, 0.035);
+}
+
+.partner-card h2 {
+  margin: 0 0 15px;
+
+  color: #263847;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.partner-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 40px;
+  row-gap: 11px;
+}
+
+.partner-field {
+  width: 100%;
+}
+
+.partner-field label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #263847;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.partner-field input,
+.partner-field select {
+  width: 100%;
+  height: 30px;
+
+  padding: 0 9px;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #263847;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.partner-field input:focus,
+.partner-field select:focus {
+  border-color: #c9a254;
+}
+
+.partner-field input[type="file"] {
+  padding: 5px 8px;
+
+  color: #666;
+
+  font-size: 10px;
+}
+
+.partner-form-note {
+  grid-column: 1 / -1;
+
+  margin: 1px 0 0;
+
+  color: #8a8f92;
+
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.partner-submit {
+  grid-column: 1 / 2;
+
+  justify-self: start;
+
+  height: 39px;
+
+  margin-top: 2px;
+
+  padding: 0 22px;
+
+  border: 1px solid #c9a254;
+  border-radius: 5px;
+
+  background: #c9a254;
+  color: #10243f;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.partner-submit:hover {
+  background: #b99143;
+  transform: translateY(-1px);
+}
+
+.partner-strip {
+  width: 100%;
+  height: 58px;
+
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #0b2340;
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+.partner-strip div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.partner-strip strong {
+  color: #c9a254;
+  font-size: 11px;
+}
+
+.partner-strip span {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.partner-strip > div:last-child {
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 900px) {
+
+  .partner-main {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+
+  .partner-form {
+    column-gap: 22px;
+  }
+
+  .partner-strip {
+    height: auto;
+    min-height: 58px;
+
+    padding: 12px 22px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .partner-main {
+    padding: 25px 18px;
+  }
+
+  .partner-info h1 {
+    font-size: 27px;
+  }
+
+  .partner-description {
+    font-size: 12px;
+  }
+
+  .partner-form {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-form-note,
+  .partner-submit {
+    grid-column: 1;
+  }
+
+  .partner-strip {
+    padding: 12px 18px;
+  }
+}

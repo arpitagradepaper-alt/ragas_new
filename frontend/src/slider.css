@@ -1,0 +1,132 @@
+/* =========================================
+   RAGAS CAREER WORLD
+   NORMAL WEBSITE SCROLL
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   MAIN PAGE
+   NO FIXED HEIGHT
+========================================= */
+
+.page-slider {
+  width: 100%;
+  height: auto;
+
+  overflow: visible;
+
+  scroll-snap-type: none;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.page-slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================
+   SECTIONS
+   NATURAL HEIGHT
+========================================= */
+
+.page-slide {
+  width: 100%;
+
+  height: auto;
+  min-height: 0;
+
+  position: relative;
+
+  scroll-snap-align: none;
+  scroll-snap-stop: normal;
+
+  overflow: visible;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.page-slide > * {
+  width: 100%;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer-slide {
+  width: 100%;
+
+  height: auto;
+  min-height: 0;
+
+  scroll-snap-align: none;
+  scroll-snap-stop: normal;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .page-slider {
+    width: 100%;
+    height: auto;
+
+    overflow: visible;
+
+    scroll-snap-type: none;
+  }
+
+  .page-slide {
+    width: 100%;
+
+    height: auto;
+    min-height: 0;
+
+    overflow: visible;
+
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .page-slider {
+    height: auto;
+    overflow: visible;
+  }
+
+  .page-slide {
+    height: auto;
+    min-height: 0;
+  }
+}

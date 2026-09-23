@@ -1,0 +1,287 @@
+.post-job-page {
+  width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  color: #10243f;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.post-job-main {
+  width: 100%;
+  min-height: calc(100vh - 78px - 58px);
+
+  padding: 28px;
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 22px;
+}
+
+/* =========================
+   LEFT
+========================= */
+
+.post-job-info {
+  padding-top: 5px;
+}
+
+.post-job-eyebrow {
+  margin: 0 0 11px;
+
+  color: #a77a2c;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.post-job-info h1 {
+  margin: 0;
+
+  color: #10243f;
+
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.post-job-description {
+  margin: 16px 0 0;
+
+  color: #596168;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.verification-note {
+  margin-top: 18px;
+
+  padding: 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e2;
+  border-radius: 6px;
+
+  color: #5c6368;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.post-job-card {
+  width: 100%;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e4e1;
+  border-radius: 7px;
+
+  box-shadow: 0 2px 7px rgba(16, 36, 63, 0.035);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.post-job-form {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 42px;
+  row-gap: 12px;
+}
+
+.post-field {
+  width: 100%;
+}
+
+.post-field label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #263847;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.post-field input,
+.post-field textarea {
+  width: 100%;
+
+  padding: 0 9px;
+
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #263847;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 12px;
+
+  transition: border-color 0.2s ease;
+}
+
+.post-field input {
+  height: 30px;
+}
+
+.post-field textarea {
+  height: 54px;
+  padding-top: 7px;
+
+  resize: none;
+}
+
+.post-field input:focus,
+.post-field textarea:focus {
+  border-color: #c9a254;
+}
+
+/* =========================
+   SUBMIT
+========================= */
+
+.post-job-submit {
+  grid-column: 1 / 2;
+
+  justify-self: start;
+
+  margin-top: 7px;
+
+  height: 39px;
+
+  padding: 0 22px;
+
+  border: 1px solid #c9a254;
+  border-radius: 5px;
+
+  background: #c9a254;
+  color: #10243f;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.post-job-submit:hover {
+  background: #b99143;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   BOTTOM STRIP
+========================= */
+
+.post-job-strip {
+  width: 100%;
+  height: 58px;
+
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #0b2340;
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+.post-job-strip div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-job-strip strong {
+  color: #c9a254;
+  font-size: 11px;
+}
+
+.post-job-strip span {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.post-job-strip > div:last-child {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .post-job-main {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+
+  .post-job-form {
+    column-gap: 22px;
+  }
+
+  .post-job-strip {
+    height: auto;
+    min-height: 58px;
+
+    padding: 12px 22px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .post-job-main {
+    padding: 25px 18px;
+  }
+
+  .post-job-info h1 {
+    font-size: 27px;
+  }
+
+  .post-job-description {
+    font-size: 12px;
+  }
+
+  .post-job-form {
+    grid-template-columns: 1fr;
+  }
+
+  .post-job-submit {
+    grid-column: 1;
+  }
+
+  .post-job-strip {
+    padding: 12px 18px;
+  }
+}

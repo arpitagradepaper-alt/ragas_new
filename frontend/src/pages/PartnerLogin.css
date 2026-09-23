@@ -1,0 +1,139 @@
+.partner-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f5f8f7;
+}
+
+.partner-login-card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  padding: 42px;
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(13, 48, 41, 0.12);
+}
+
+.partner-login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partner-login-header h1 {
+  margin: 0 0 10px;
+  color: #0d3029;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.partner-login-header p {
+  margin: 0;
+  color: #66736f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.partner-login-error {
+  background: #fff1f1;
+  border: 1px solid #f0caca;
+  color: #b42318;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.partner-login-field {
+  margin-bottom: 20px;
+}
+
+.partner-login-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #26332f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.partner-login-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d6dfdc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  color: #222;
+  background: #ffffff;
+}
+
+.partner-login-field input:focus {
+  border-color: #0d3029;
+  box-shadow: 0 0 0 3px rgba(13, 48, 41, 0.08);
+}
+
+.partner-login-button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  background: #0d3029;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.partner-login-button:hover {
+  background: #17483e;
+}
+
+.partner-login-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.partner-login-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #e5ebe9;
+}
+
+.partner-login-footer p {
+  display: inline;
+  margin: 0;
+  color: #697671;
+  font-size: 14px;
+}
+
+.partner-login-footer button {
+  border: none;
+  background: transparent;
+  color: #0d3029;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.partner-login-footer button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .partner-login-page {
+    padding: 25px 15px;
+  }
+
+  .partner-login-card {
+    padding: 30px 22px;
+  }
+
+  .partner-login-header h1 {
+    font-size: 27px;
+  }
+}

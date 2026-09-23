@@ -1,0 +1,373 @@
+/* ================================
+   CANDIDATE DETAILS PAGE
+================================ */
+
+.candidate-details-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f6f8f7;
+  color: #17201d;
+}
+
+
+/* ================================
+   TOP
+================================ */
+
+.candidate-details-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.candidate-back-btn {
+  border: 1px solid #d8e0dc;
+  background: #ffffff;
+  color: #24332e;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.candidate-back-btn:hover {
+  background: #0d3029;
+  color: #ffffff;
+  border-color: #0d3029;
+}
+
+.candidate-details-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #718078;
+}
+
+
+/* ================================
+   PROFILE HEADER
+================================ */
+
+.candidate-profile-header {
+  background: #ffffff;
+  border: 1px solid #e1e8e4;
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.candidate-profile-main {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.candidate-large-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  background: #0d3029;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.candidate-profile-main h1 {
+  margin: 0 0 5px;
+  font-size: 27px;
+  font-weight: 700;
+  color: #17201d;
+}
+
+.candidate-profile-main p {
+  margin: 0 0 9px;
+  color: #7a8781;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.candidate-active-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  border-radius: 20px;
+  background: #eaf6ef;
+  color: #197044;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ================================
+   CONTACT ACTIONS
+================================ */
+
+.candidate-contact-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.candidate-action-btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #d8e0dc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #26352f;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.candidate-action-btn:hover {
+  background: #0d3029;
+  color: #ffffff;
+  border-color: #0d3029;
+}
+
+.candidate-action-btn.whatsapp:hover {
+  background: #1f7a4d;
+  border-color: #1f7a4d;
+}
+
+
+/* ================================
+   DETAILS GRID
+================================ */
+
+.candidate-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.candidate-info-card {
+  background: #ffffff;
+  border: 1px solid #e1e8e4;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.candidate-full-card {
+  grid-column: 1 / -1;
+}
+
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.candidate-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #edf1ef;
+}
+
+.candidate-section-title h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1b2924;
+}
+
+.candidate-section-title span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9aa59f;
+}
+
+
+/* ================================
+   INFORMATION
+================================ */
+
+.candidate-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 28px;
+}
+
+.candidate-info-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.candidate-info-grid label {
+  font-size: 11px;
+  color: #89948f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.candidate-info-grid strong {
+  font-size: 14px;
+  color: #26352f;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+
+/* ================================
+   CONTACT BOX
+================================ */
+
+.candidate-contact-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.candidate-contact-box div {
+  padding: 17px;
+  border-radius: 10px;
+  background: #f7f9f8;
+  border: 1px solid #e8eeeb;
+}
+
+.candidate-contact-box span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 11px;
+  color: #89948f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.candidate-contact-box strong {
+  display: block;
+  color: #26352f;
+  font-size: 14px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.candidate-details-loading {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #68756f;
+  font-size: 15px;
+}
+
+
+/* ================================
+   ERROR
+================================ */
+
+.candidate-details-error {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #fff4f4;
+  border: 1px solid #f0d4d4;
+  color: #b42318;
+  font-size: 14px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .candidate-details-page {
+    padding: 24px;
+  }
+
+  .candidate-profile-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .candidate-contact-actions {
+    width: 100%;
+  }
+
+  .candidate-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .candidate-full-card {
+    grid-column: auto;
+  }
+
+  .candidate-contact-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .candidate-details-page {
+    padding: 16px;
+  }
+
+  .candidate-details-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .candidate-profile-header {
+    padding: 20px;
+  }
+
+  .candidate-profile-main {
+    align-items: flex-start;
+  }
+
+  .candidate-large-avatar {
+    width: 58px;
+    height: 58px;
+    font-size: 19px;
+  }
+
+  .candidate-profile-main h1 {
+    font-size: 21px;
+  }
+
+  .candidate-info-card {
+    padding: 19px;
+  }
+
+  .candidate-info-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .candidate-contact-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .candidate-action-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,472 @@
+/* =========================================
+   RAGAS CAREER WORLD
+   FOOTER
+========================================= */
+
+.site-footer {
+  width: 100%;
+  background: #0b2340;
+  color: #ffffff;
+}
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  padding: 55px 45px 42px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.6fr
+    1fr
+    1fr
+    1.35fr;
+
+  gap: 55px;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.footer-logo-mark {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #c9a24d;
+
+  border-radius: 5px;
+
+  color: #102b25;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.footer-logo div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 1;
+}
+
+.footer-logo span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #c9a24d;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+.footer-brand > p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-social {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  border-radius: 5px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-social a:hover {
+  background: #c9a24d;
+
+  border-color: #c9a24d;
+
+  color: #102b25;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column,
+.footer-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.footer-column h3,
+.footer-contact h3 {
+  margin: 2px 0 18px;
+
+  color: #c9a24d;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   COLUMN BUTTONS
+========================================= */
+
+.footer-column button {
+  padding: 0;
+  margin: 0 0 11px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-family: inherit;
+  font-size: 10px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.footer-column button:hover {
+  padding-left: 4px;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   CONTACT ITEMS
+========================================= */
+
+.footer-contact-item {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+}
+
+.footer-contact-item svg {
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  color: #c9a24d;
+}
+
+.footer-contact-item div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.footer-contact-item strong {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.footer-contact-item span {
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+.footer-contact-item:hover span {
+  color: #c9a24d;
+}
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.footer-whatsapp {
+  height: 35px;
+
+  padding: 0 14px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 3px;
+
+  border: 1px solid #c9a24d;
+
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: #c9a24d;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-whatsapp:hover {
+  background: #c9a24d;
+
+  color: #102b25;
+
+  transform: translateY(-2px);
+}
+
+.footer-whatsapp svg {
+  flex-shrink: 0;
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: 100%;
+
+  min-height: 58px;
+
+  padding: 0 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom-left span {
+  color: rgba(255, 255, 255, 0.48);
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   LEGAL LINKS
+========================================= */
+
+.footer-legal {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-legal button {
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.footer-legal button:hover {
+  color: #c9a24d;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+  .footer-main {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+    padding: 45px 35px 38px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    padding: 0 35px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .footer-main {
+    padding: 40px 22px 30px;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    min-height: auto;
+
+    padding: 18px 22px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+
+    gap: 10px 16px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-social {
+    margin-top: 18px;
+  }
+
+  .footer-bottom {
+    padding: 18px 20px;
+  }
+}
